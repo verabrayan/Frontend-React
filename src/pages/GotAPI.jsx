@@ -31,6 +31,10 @@ export default function GotAPI() {
     return <div>
         {console.log(characters)}
         <button onClick={()=>{setActive(!active)}}>{active?"Activado":"Desactivado"}</button>
-        {characters.map(character=><Character key={character.id} character={character}/>)}
+        {characters.map(character=><Character key={character.id} character={character}>
+            {/* Children: */}
+            <p>Contenido</p>
+            <p>Contenido</p>
+        </Character>)}
     </div>;
 }

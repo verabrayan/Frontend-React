@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-//import App from './App';
-import GotAPI from './pages/GotAPI';
+import App from './App';
+//import GotAPI from './pages/GotAPI';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <GotAPI />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
