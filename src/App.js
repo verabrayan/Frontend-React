@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Fundamentos from './pages/Fundamentos'
 import GotAPI from './pages/GotAPI'
+import Home from './pages/Home'
 
 
 const App = ()=>{
@@ -9,13 +10,15 @@ const App = ()=>{
   <header>
     header
   </header>
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Fundamentos/>} />
-      <Route path="/got" element={<GotAPI/>} />
-    </Routes>
-
-  </BrowserRouter>
+  <main className='page'>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/fundamentos" element={<Fundamentos/>}/>
+        <Route path="/got" element={<GotAPI/>}/>
+      </Routes>
+    </BrowserRouter>
+  </main>
   <footer>
     footer
   </footer>
